@@ -54,8 +54,9 @@ dune build
 
 ## Examples
 
-Run the exponential lower bound construction for Zadeh's rule on PGSolver:
+Generate a parity game using the generator app by running the following from
+the directory where you did `dune build`:
 ```
-  bin/stratimprgen -pg zadehexp [n] | bin/pgsolver -dsd -dgo -dlo -dsg -v 2 -jh -global policyiter -x -sfse
+  ./_build/default/src/apps/generator/generator.exe --generator recursiveladder 4
 ```
-where [n] is the index of the game, e.g. 3.
+
